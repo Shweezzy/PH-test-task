@@ -1,0 +1,24 @@
+@import "bootstrap/scss/bootstrap";
+@import "fonts.css";
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Onest", sans-serif;
+  background-color: #fff;
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+body {
+  background: linear-gradient(
+    180deg,
+    rgba(200, 224, 149, 0.8) 0%,
+    rgba(221, 238, 239, 0.8) 100%
+  );
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+}

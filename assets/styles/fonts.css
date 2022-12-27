@@ -1,0 +1,59 @@
+/* Onest */
+@font-face {
+  font-family: Onest;
+  src: url(../fonts/onest/OnestRegular1602-hint.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Onest;
+  src: url(../fonts/onest/OnestMedium1602-hint.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Onest;
+  src: url(../fonts/onest/OnestBold1602-hint.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Onest;
+  src: url(../fonts/onest/OnestExtraBold1602-hint.ttf) format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: Onest;
+  src: url(../fonts/onest/OnestBlack1602-hint.ttf) format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Piazzolla */
+@font-face {
+  font-family: Piazzolla;
+  src: url(../fonts/piazzolla/Piazzolla-Medium.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Piazzolla;
+  src: url(../fonts/piazzolla/Piazzolla-MediumItalic.ttf) format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* Gilroy */
+@font-face {
+  font-family: Gilroy;
+  src: url(../fonts/gilroy/Gilroy-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Gilroy;
+  src: url(../fonts/gilroy/Gilroy-Bold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
