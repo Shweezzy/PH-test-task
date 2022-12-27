@@ -3,13 +3,17 @@
     <card>
       <tab-group class="tabs" :tabs="['опис', 'користь', 'інгредієнти', 'спосіб застосування']">
         <template #tab1>
-          <p class="title">Комплекс EPA + DHA кислот і натуральних вітамінів А & D3 для здоров'я
-            твоєї шкіри, волосся, зору, сну, міцних кісток, суглобів та імунітету.
+          <p class="title">
+            Комплекс EPA + DHA кислот і натуральних вітамінів А & D3 для
+            здоров'я твоєї шкіри, волосся, зору, сну, міцних кісток, суглобів та
+            імунітету.
           </p>
         </template>
         <template #tab2>
           <ul class="benefit">
-            <li>Покращують стан шкіри: борються з акне та сприяють її регенерації</li>
+            <li>
+              Покращують стан шкіри: борються з акне та сприяють її регенерації
+            </li>
             <li>Зменшують випадіння волосся, стимулюють його ріст</li>
             <li>Підіймають настрій та полегшують симптоми депресії</li>
             <li>Зміцнюють імунітет: зменшують запальні процеси</li>
@@ -23,7 +27,10 @@
             <tbody>
               <tr>
                 <td><strong>Склад:</strong></td>
-                <td>100% риб'ячий жир з печінки тріски,<br> желатин, гліцерин.</td>
+                <td>
+                  100% риб'ячий жир з печінки тріски,<br />
+                  желатин, гліцерин.
+                </td>
               </tr>
               <tr>
                 <td><strong>EPA / DHA</strong></td>
@@ -41,15 +48,17 @@
           </table>
         </template>
         <template #tab4>
-          <p>Для профілактики, дорослим і дітям від 11 років –
+          <p>
+            Для профілактики, дорослим і дітям від 11 років –
             <em><strong>4 капсули на день</strong></em>
-            , разом із<br> їжею або одразу після. Бажано з іншими жирами
+            , разом із<br />
+            їжею або одразу після. Бажано з іншими жирами
             <em>для кращого засвоєння</em>
           </p>
           <p>
             <strong>Курс прийому: </strong>
-            2-3 місяці, після чого зробити перерву 1-2 місяці або перейти на Омега-3 із
-            Тунця.
+            2-3 місяці, після чого зробити перерву 1-2 місяці або перейти на
+            Омега-3 із Тунця.
           </p>
         </template>
       </tab-group>
@@ -60,12 +69,12 @@
             <img class="drugs__icon" src="@/assets/images/drugs.png" alt="drugs-icon" />
           </picture>
           <div class="drugs__text">
-            <p><strong>В упаковці:</strong><br>
-              120 капсул по 500 мг<br>
+            <p>
+              <strong>В упаковці:</strong><br />
+              120 капсул по 500 мг<br />
               <span>1 місяць прийому</span>
             </p>
           </div>
-
         </div>
         <div class="description__price d-flex align-items-end justify-content-end w-50">
           <strong class="price">963 ₴</strong>
@@ -83,29 +92,29 @@
           <picture>
             <img class="delivery__icon" src="@/assets/images/delivery_icon1.png" alt="free_delivery" />
           </picture>
-          <span>Безкоштовна доставка<br> від 1800 грн</span>
+          <span>Безкоштовна доставка<br />
+            від 1800 грн</span>
         </div>
         <div class="delivery__16">
           <picture>
             <img class="delivery__icon" src="@/assets/images/delivery_icon2.png" alt="until_16" />
           </picture>
-          <span>Відправки в день оформлення<br> замовлення до 16:00</span>
-
+          <span>Відправки в день оформлення<br />
+            замовлення до 16:00</span>
         </div>
         <div class="delivery__cash-return">
           <picture>
             <img class="delivery__icon" src="@/assets/images/delivery_icon3.png" alt="cash_return" />
           </picture>
-          <span>Гарантія повернення<br> грошових коштів</span>
-
+          <span>Гарантія повернення<br />
+            грошових коштів</span>
         </div>
       </section>
     </div>
   </div>
 </template>
 
-<script setup>
-</script>
+<script setup></script>
 
 <style lang="scss" scoped>
 .phone-feature {
@@ -116,7 +125,7 @@
   #tab-1 {
     .title {
       font: 400 18px/28px Onest;
-      color: #00284F;
+      color: #00284f;
       width: 660px;
       margin-left: 2px;
     }
@@ -133,7 +142,7 @@
         color: #00284f;
 
         &::marker {
-          color: #00284F;
+          color: #00284f;
         }
       }
     }
@@ -146,7 +155,7 @@
       margin-top: 30px;
 
       tr {
-        border-bottom: 1px solid #1D1D1B;
+        border-bottom: 1px solid #1d1d1b;
 
         & td:first-child {
           width: 350px;
@@ -171,12 +180,10 @@
 
       &:first-child {
         margin-top: 31px;
-
       }
 
       &:nth-child(2) {
         margin-top: 20px;
-
       }
     }
   }
@@ -196,7 +203,7 @@
 
     .drugs__text {
       font: 400 18px/23px Onest;
-      color: #00284F;
+      color: #00284f;
       font-weight: 400;
 
       margin-left: 33px;
@@ -209,7 +216,7 @@
   }
 
   .description__price {
-    color: #00284F;
+    color: #00284f;
 
     padding: 0 3px 20px 0px;
 
@@ -239,7 +246,6 @@
       font-size: 40px;
       line-height: 51px;
     }
-
   }
 }
 
@@ -253,9 +259,11 @@
   width: 100%;
   height: 88px;
 
-  background: linear-gradient(270deg, rgba(255, 255, 255, 0.81) 0%, rgba(255, 255, 255, 0.54) 100%);
+  background: linear-gradient(270deg,
+      rgba(255, 255, 255, 0.81) 0%,
+      rgba(255, 255, 255, 0.54) 100%);
   border-radius: 15px;
-  margin-top: 35px;
+  margin-top: 0;
   margin-bottom: 35px;
 
   .delivery__16 {
@@ -283,8 +291,7 @@
       font-weight: 400;
       line-height: 24px;
       letter-spacing: 0em;
-      color: #00284F;
-
+      color: #00284f;
     }
   }
 }
@@ -311,6 +318,7 @@
   .delivery {
     width: 100%;
     height: 206px;
+    margin-top: 33px;
 
     div {
       flex-direction: column;
@@ -385,13 +393,11 @@
 
       .drugs__text {
         font: 500 16px/23px Onest;
-        color: #00284F;
+        color: #00284f;
         font-weight: 400;
         margin-left: 24px;
         margin-right: 9px;
         padding-top: 10px;
-
-
       }
 
       .drugs__icon {
@@ -410,6 +416,8 @@
     height: 276px;
     flex-direction: column;
     padding: 7px 0 0 0px;
+    padding: 26px 0 17px 0px;
+    margin-top: 22px;
 
     div {
       flex-direction: row;
@@ -421,14 +429,12 @@
         line-height: 22px;
         text-align: left;
         margin-left: 21px;
-
       }
     }
 
     .delivery__16 {
       width: auto;
     }
-
   }
 }
 </style>

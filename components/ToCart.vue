@@ -2,13 +2,13 @@
     <div class="to-cart d-flex justify-content-between">
         <div class="to-cart__counter d-flex justify-content-between">
             <button class="counter__btn minus" @click="increment(false)">
-                <img src="@/assets/images/to-cart/minus.png" alt="minus_icon">
+                <img src="@/assets/images/to-cart/minus.png" alt="minus_icon" />
             </button>
             <div class="counter__wrapper counter d-flex align-items-center">
                 <span>{{ localCounter }}</span>
             </div>
             <button class="counter__btn plus" @click="increment(true)">
-                <img src="@/assets/images/to-cart/plus.png" alt="minus_icon">
+                <img src="@/assets/images/to-cart/plus.png" alt="minus_icon" />
             </button>
         </div>
         <div class="to-cart__nav">
@@ -18,23 +18,19 @@
 </template>
 
 <script setup>
-const localCounter = ref(1)
-const counter = useCookie(
-    'productsCounter',
-    {
-        default: () => (0),
-        watch: true
-    }
-)
+const localCounter = ref(1);
+const counter = useCookie("productsCounter", {
+    default: () => 0,
+    watch: true,
+});
 const increment = (count) => {
     if (count) localCounter.value++;
     else if (localCounter.value > 1) localCounter.value--;
-}
+};
 const sendData = () => {
     counter.value = counter.value + localCounter.value;
-    location.reload()
-}
-
+    location.reload();
+};
 </script>
 
 <style lang="scss" scoped>
@@ -69,7 +65,7 @@ const sendData = () => {
 
             span {
                 font: 28px/35px Onest;
-                color: #00284F;
+                color: #00284f;
 
                 margin: auto;
             }
@@ -77,7 +73,7 @@ const sendData = () => {
     }
 
     .to-cart__nav {
-        background: #69C522;
+        background: #69c522;
         height: 56px;
         width: 416px;
 
@@ -96,7 +92,7 @@ const sendData = () => {
         }
 
         &:hover {
-            background: #00284F;
+            background: #00284f;
             transform: translateY(0px);
         }
     }
@@ -135,10 +131,9 @@ const sendData = () => {
                 font: 19px/28px Onest;
 
                 &::after {
-                    content: ' - 489 ₴';
+                    content: " - 489 ₴";
                 }
             }
-
         }
 
         .to-cart__counter {
@@ -146,7 +141,6 @@ const sendData = () => {
         }
     }
 }
-
 
 @media screen and (max-width: 1400px) {
     .to-cart {

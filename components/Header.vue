@@ -24,8 +24,9 @@
           <picture>
             <img class="header__icon icon-cart" src="@/assets/images/header/icon-cart.png" alt="search_icon" />
           </picture>
-          <span class="icon-cart-text" @click="clearProducts">{{ counter }}</span>
-
+          <span class="icon-cart-text" @click="clearProducts">{{
+    counter
+            }}</span>
         </div>
       </div>
       <div class="header__menu d-flex align-items-center justify-content-center">
@@ -52,18 +53,16 @@
 </template>
 
 <script setup>
-const counter = useCookie(
-  'productsCounter',
-  {
-    watch: true
-  }
-)
+const counter = useCookie("productsCounter", {
+  default: () => 0,
+  watch: true,
+});
 const clearProducts = () => {
-  const confirmed = confirm('Want to remove all items in the cart?')
+  const confirmed = confirm("Want to remove all items in the cart?");
   if (confirmed) {
-    counter.value = 0
-  } else return
-}
+    counter.value = 0;
+  } else return;
+};
 </script>
 
 <style lang="scss" scoped>
@@ -85,12 +84,13 @@ const clearProducts = () => {
     line-height: 14px;
     width: 24px;
     height: 22px;
-    background: #F5F352;
+    background: #f5f352;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: -10px 0px 0 91px;
+    cursor: pointer;
   }
 
   .container {
@@ -188,7 +188,6 @@ const clearProducts = () => {
 
 // Tablet
 @media screen and (max-width: 768px) {
-
   .header {
     top: 30px;
 
@@ -218,20 +217,16 @@ const clearProducts = () => {
       }
 
       .header__menu {
-
         ul {
-
           li {
             margin: 0 12px;
             margin-top: -4px;
             min-width: 124px;
           }
         }
-
       }
     }
   }
-
 }
 
 // Phone
@@ -293,12 +288,9 @@ const clearProducts = () => {
       }
 
       .header__menu {
-
         display: none !important;
-
       }
     }
   }
-
 }
 </style>

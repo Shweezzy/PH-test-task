@@ -37,7 +37,6 @@
 
 // Tablet
 @media screen and (max-width: 768px) {
-
   .shipping {
     height: 28px;
 
@@ -52,12 +51,10 @@
       vertical-align: middle;
     }
   }
-
 }
 
 // Phone
 @media screen and (max-width: 414px) {
-
   .shipping {
     height: 30px;
 
@@ -71,6 +68,5 @@
       vertical-align: middle;
     }
   }
-
 }
 </style>

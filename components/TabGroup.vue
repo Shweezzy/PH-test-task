@@ -2,14 +2,11 @@
     <div>
         <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li v-for="(item, i) in tabs" :key="i" class="nav-item" role="presentation">
-                <button :class="{ active: item === tabs[0] }" class="nav-link " :id="item" data-bs-toggle="tab"
+                <button :class="{ active: item === tabs[0] }" class="nav-link" :id="item" data-bs-toggle="tab"
                     :data-bs-target="`#tab-${i + 1}`" type="button" role="tab" :aria-controls="item"
                     aria-selected="true">
-                    {{
-        item
-}}
+                    {{ item }}
                 </button>
-
             </li>
         </ul>
         <div class="tab-content" id="myTabContent">
@@ -23,7 +20,7 @@
 </template>
 
 <script setup>
-const { tabs } = defineProps(['tabs'])
+const { tabs } = defineProps(["tabs"]);
 </script>
 
 <style lang="scss" scoped>
@@ -40,11 +37,10 @@ const { tabs } = defineProps(['tabs'])
             margin-right: 40px;
         }
 
-
         .nav-link {
             font: 700 17px/22px Onest;
 
-            color: #00284F;
+            color: #00284f;
             background: transparent;
             text-align: start;
             text-transform: uppercase;
@@ -57,10 +53,9 @@ const { tabs } = defineProps(['tabs'])
             transition: border-bottom-color 0.3s;
             opacity: 0.4;
 
-
             &.active {
                 opacity: 1;
-                border-bottom-color: #00284F;
+                border-bottom-color: #00284f;
             }
         }
     }
@@ -72,17 +67,15 @@ const { tabs } = defineProps(['tabs'])
 
 // Tablet
 @media screen and (max-width: 768px) {
-
     .nav-tabs {
         width: 100%;
-        margin: 13px 0px 11px 0px;
+        margin: 15px 0px 9px 0px;
         justify-content: space-between;
     }
 }
 
 // Phone
 @media screen and (max-width: 414px) {
-
     .nav-tabs {
         width: 99%;
         margin: 16px 7px 11px 3px;
